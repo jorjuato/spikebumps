@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Main    [Aircrack-ng]
+  </title>
+
+  <meta name="generator" content="DokuWiki snapshot?" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2007-08-25T23:17:21+0200" />
+<meta name="keywords" content="Main" />
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Aircrack-ng" />
+<link rel="start" href="/" />
+<link rel="contents" href="/doku.php?id=Main&amp;do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/doku.php?do=export_xhtml&amp;id=Main" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/doku.php?do=export_raw&amp;id=Main" />
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all" />
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php" />
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print" />
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?edit=0&amp;write=0" ></script>
+
+  <link rel="shortcut icon" href="/lib/tpl/default/images/favicon.ico" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="/doku.php?id=Main&amp;do=backlink&amp;DokuWiki=01960a5f302c47b6389d154149a51921" >Main</a>]]
+      </div>
+      <div class="logo">
+        <a href="/doku.php?id=&amp;DokuWiki=01960a5f302c47b6389d154149a51921"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">Aircrack-ng</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button" method="post" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="Main" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [ALT+V]" /></div></form>        <form class="button" method="get" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="Main" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [ALT+O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button" method="get" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [ALT+R]" /></div></form>        <form action="/doku.php?id=" accept-charset="utf-8" class="search" id="dw__search"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+        <div class="breadcrumbs">
+      Trace: <span class="bcsep">&raquo;</span> <span class="curid"><a href="/doku.php?id=Main&amp;DokuWiki=01960a5f302c47b6389d154149a51921"  class="breadcrumbs" title="Main">Main</a></span>          </div>
+    
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#introduction" class="toc">Introduction</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#what_is_aircrack-ng" class="toc">What is Aircrack-ng ?</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#news" class="toc">News</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#download" class="toc">Download</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#stable" class="toc">Stable</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#changelog" class="toc">Changelog</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#development" class="toc">Development</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#virtual_machine" class="toc">Virtual Machine</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#driver_patches" class="toc">Driver patches</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#support" class="toc">Support</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#aircrack-ng_suite" class="toc">Aircrack-ng suite</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#other_documentation" class="toc">Other Documentation</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#donations" class="toc">Donations</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#url" class="toc">URL</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#rss" class="toc">RSS</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#contact" class="toc">Contact</a></span></div></li></ul>
+</div>
+</div>
+
+
+
+<h1><a name="introduction" id="introduction">Introduction</a></h1>
+<div class="level1">
+
+<p>
+ <a href="/lib/exe/fetch.php?cache=cache&amp;media=http%3A%2F%2Fwww.aircrack-ng.org%2Fimg%2Flogo.png&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="media" title="http://www.aircrack-ng.org/img/logo.png"><img src="/lib/exe/fetch.php?w=&amp;h=&amp;cache=cache&amp;media=http%3A%2F%2Fwww.aircrack-ng.org%2Fimg%2Flogo.png" class="medialeft" alt="" /></a>aircrack is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough data packets have been captured. It implements the standard FMS attack along with some optimizations like KoreK attacks, thus making the attack much faster compared to other WEP cracking tools. In fact, aircrack is a set of tools for auditing wireless networks.
+</p>
+
+</div>
+
+<h1><a name="what_is_aircrack-ng" id="what_is_aircrack-ng">What is Aircrack-ng ?</a></h1>
+<div class="level1">
+
+<p>
+Aircrack-ng is the next generation of aircrack with lots of new features:
+</p>
+<ul>
+<li class="level1"><div class="li"> Better documentation (wiki, manpages) and support (<a href="http://forum.tinyshell.be" class="urlextern" title="http://forum.tinyshell.be"  rel="nofollow">Forum</a>, <a href="http://trac.aircrack-ng.org" class="urlextern" title="http://trac.aircrack-ng.org"  rel="nofollow">trac</a>, <a href="irc://irc.freenode.net/aircrack-ng" class="urlextern" title="irc://irc.freenode.net/aircrack-ng"  rel="nofollow">IRC:  #aircrack-ng on Freenode</a>).</div>
+</li>
+<li class="level1"><div class="li"> More cards/drivers supported</div>
+</li>
+<li class="level1"><div class="li"> New WEP attack: <a href="http://www.cdc.informatik.tu-darmstadt.de/aircrack-ptw/" class="urlextern" title="http://www.cdc.informatik.tu-darmstadt.de/aircrack-ptw/"  rel="nofollow">PTW</a></div>
+</li>
+<li class="level1"><div class="li"> More <acronym title="Operating System">OS</acronym> and plateforms supported</div>
+</li>
+<li class="level1"><div class="li"> Fragmentation attack</div>
+</li>
+<li class="level1"><div class="li"> Improved cracking speed</div>
+</li>
+<li class="level1"><div class="li"> WEP dictionnary attack</div>
+</li>
+<li class="level1"><div class="li"> Capture with multiple cards</div>
+</li>
+<li class="level1"><div class="li"> New tools: <a href="/doku.php?id=airtun-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airtun-ng">airtun-ng</a>, <a href="/doku.php?id=packetforge-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="packetforge-ng">packetforge-ng</a> (improved arpforge), <a href="/doku.php?id=wesside-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="wesside-ng">wesside-ng</a> and <a href="/doku.php?id=airserv-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airserv-ng">airserv-ng</a></div>
+</li>
+<li class="level1"><div class="li"> Optimizations, other improvements and bug fixing</div>
+</li>
+<li class="level1"><div class="li"> &hellip;</div>
+</li>
+</ul>
+
+<p>
+<br/>
+ <strong>Note</strong>: Check <a href="http://trac.aircrack-ng.org" class="urlextern" title="http://trac.aircrack-ng.org"  rel="nofollow">trac</a> for planned and requested features
+</p>
+
+</div>
+
+<h1><a name="news" id="news">News</a></h1>
+<div class="level1">
+<table class="inline">
+	<tr>
+		<th>24 August 2007</th><td>24th Chaos Communication Congress is just <a href="http://events.ccc.de/congress/2007/" class="urlextern" title="http://events.ccc.de/congress/2007/"  rel="nofollow">announced</a>. We will be there ;)</td>
+	</tr>
+	<tr>
+		<th>21 August 2007</th><td>No more account (reading doesn&#039;t require an account) creation will be allowed due to a recent vandalism to the wiki. <br/>
+ Account cleanup will be done and only known users will have an account. <br/>
+ If you need to edit the wiki, tell us in <acronym title="Internet Relay Chat">IRC</acronym> or on the forum.</td>
+	</tr>
+	<tr>
+		<th>19 August 2007</th><td>A <a href="http://photos.aircrack-ng.org/" class="urlextern" title="http://photos.aircrack-ng.org/"  rel="nofollow">photo album</a> was created to browse more easily the pictures taken during Defcon and CCC. <br/>
+ Videos: <a href="http://defcon15.aircrack-ng.org/" class="urlextern" title="http://defcon15.aircrack-ng.org/"  rel="nofollow">Defcon</a> and <a href="http://cccamp2007.aircrack-ng.org/" class="urlextern" title="http://cccamp2007.aircrack-ng.org/"  rel="nofollow">Chaos Communication Camp 2007</a></td>
+	</tr>
+	<tr>
+		<th>18 August 2007</th><td>A new VMWare server to host <a href="http://buildbot.net/trac" class="urlextern" title="http://buildbot.net/trac"  rel="nofollow">buildbots</a> should be installed next week.</td>
+	</tr>
+	<tr>
+		<th>14 August 2007</th><td>The forum is now up and running. Nothing was lost ;)</td>
+	</tr>
+	<tr>
+		<th>13 August 2007</th><td>The forum is currently down for an unknown reason. It <strong>should</strong> be resolved tomorrow.</td>
+	</tr>
+	<tr>
+		<th>11 August 2007</th><td>There was not enough space to host all pictures and videos of CCC2007 and Defcon on this hosting. <br/>
+ Everything was moved to <a href="http://summer2007.aircrack-ng.org/" class="urlextern" title="http://summer2007.aircrack-ng.org/"  rel="nofollow">http://summer2007.aircrack-ng.org/</a>; there will be enough there</td>
+	</tr>
+	<tr>
+		<th>11 August 2007</th><td>The blog is now updated nearly every day. Pictures/Movies of Defcon and CCC2007 are available <a href="http://summer2007.aircrack-ng.org/" class="urlextern" title="http://summer2007.aircrack-ng.org/"  rel="nofollow">here</a>; <br/>
+ they will be sorted after the camp and put in the blog album.</td>
+	</tr>
+	<tr>
+		<th>1 August 2007</th><td>The blog for Defcon and CCC2007 is reachable at <a href="http://blog.aircrack-ng.org" class="urlextern" title="http://blog.aircrack-ng.org"  rel="nofollow">blog.aircrack-ng.org</a></td>
+	</tr>
+	<tr>
+		<th>30 july 2007</th><td>A second very light VMWare machine (currently works only with RT73) is available.</td>
+	</tr>
+	<tr>
+		<th>11 july 2007</th><td>A new VMWare machine is available</td>
+	</tr>
+	<tr>
+		<th>10 july 2007</th><td>This year I&#039;m going to both <a href="http://www.defcon.org" class="urlextern" title="http://www.defcon.org"  rel="nofollow">Defcon</a> and <a href="http://events.ccc.de/camp/2007/Chaos_Communication_Camp_2007" class="urlextern" title="http://events.ccc.de/camp/2007/Chaos_Communication_Camp_2007"  rel="nofollow">CCC2007</a>. I should also set up a blog or something like that. <br/>
+ More information to come.</td>
+	</tr>
+	<tr>
+		<td> </td><td><a href="/doku.php?id=morenews&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="morenews">more News...</a></td>
+	</tr>
+</table>
+
+</div>
+
+<h1><a name="download" id="download">Download</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="stable" id="stable">Stable</a></h2>
+<div class="level2">
+
+<p>
+ Latest version: 0.9.1
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://download.aircrack-ng.org/aircrack-ng-0.9.1.tar.gz" class="urlextern" title="http://download.aircrack-ng.org/aircrack-ng-0.9.1.tar.gz"  rel="nofollow">Linux</a> (<a href="http://patches.aircrack-ng.org/" class="urlextern" title="http://patches.aircrack-ng.org/"  rel="nofollow">Driver patches</a>, and <a href="http://www.aircrack-ng.org/doku.php?id=install_drivers" class="urlextern" title="http://www.aircrack-ng.org/doku.php?id=install_drivers"  rel="nofollow">driver wiki doc</a>)</div>
+</li>
+<li class="level1"><div class="li"> Windows: <a href="http://download.aircrack-ng.org/aircrack-ng-0.9.1-win.zip" class="urlextern" title="http://download.aircrack-ng.org/aircrack-ng-0.9.1-win.zip"  rel="nofollow">Original</a> - <a href="http://download.aircrack-ng.org/aircrack-ng-0.9-airpcap.zip" class="urlextern" title="http://download.aircrack-ng.org/aircrack-ng-0.9-airpcap.zip"  rel="nofollow">Airpcap</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://download.aircrack-ng.org/aircrack-ng_0.9.1_arm.ipk" class="urlextern" title="http://download.aircrack-ng.org/aircrack-ng_0.9.1_arm.ipk"  rel="nofollow">Zaurus</a>  (<a href="http://zaurus.aircrack-ng.org/" class="urlextern" title="http://zaurus.aircrack-ng.org/"  rel="nofollow">drivers</a>) </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Installing the <a href="/doku.php?id=install_aircrack&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="install_aircrack">aircrack-ng suite</a> and the <a href="/doku.php?id=install_drivers&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="install_drivers">drivers</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=bugs&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="bugs">Bugs</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=downloads&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="downloads">more Downloads...</a> and how to compile aircrack-ng, distro packages&hellip;</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="changelog" id="changelog">Changelog</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> airodump-ng: wlan-ng driver now works again.</div>
+</li>
+<li class="level1"><div class="li"> airodump-ng: Fixed IP address when writing to CSV file</div>
+</li>
+<li class="level1"><div class="li"> airodump-ng: Fixed debian bug #417388: it doesn&#039;t restore terminal after error</div>
+</li>
+<li class="level1"><div class="li"> aircrack-ng: Fixed WPA cracking on SMP computers</div>
+</li>
+<li class="level1"><div class="li"> aircrack-ng: Fixed bug in calc_pmk() function causes wrong PMK to be computed</div>
+</li>
+<li class="level1"><div class="li"> airmon-ng: Fixed madwifi-ng wifiX detection (due to translation in ifconfig)</div>
+</li>
+<li class="level1"><div class="li"> patches: Added ACX injection patch</div>
+</li>
+<li class="level1"><div class="li"> patches: Updated rtl8187 patch for 2.6.21</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Graphical User Interface">GUI</acronym> (win): Added PTW option to aircrack-ng tab.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Graphical User Interface">GUI</acronym> (win): Fixed a bug when cracking with a wordlist.</div>
+</li>
+</ul>
+
+<p>
+<br/>
+ <a href="/doku.php?id=changelog&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="changelog">The complete Changelog</a>
+</p>
+
+</div>
+
+<h2><a name="development" id="development">Development</a></h2>
+<div class="level2">
+
+<p>
+ Latest development sources can be found at <a href="http://trac.aircrack-ng.org" class="urlextern" title="http://trac.aircrack-ng.org"  rel="nofollow">trac.aircrack-ng.org</a> (a bugtracker is also available there): 
+</p>
+<pre class="code">svn co http://trac.aircrack-ng.org/svn/trunk/ aircrack-ng
+cd aircrack-ng
+#and as usual
+make
+make install</pre>
+
+</div>
+
+<h2><a name="virtual_machine" id="virtual_machine">Virtual Machine</a></h2>
+<div class="level2">
+
+<p>
+ A virtual machine is available <a href="ftp://vmware.aircrack-ng.org/vmware-aircrack-ng-v2.7z" class="urlextern" title="ftp://vmware.aircrack-ng.org/vmware-aircrack-ng-v2.7z"  rel="nofollow">here</a>. See <a href="/doku.php?id=install_aircrack&amp;DokuWiki=01960a5f302c47b6389d154149a51921#installing_vmware_image" class="wikilink1" title="install_aircrack">this page</a> for more information.
+</p>
+
+<p>
+A second, very light VMWare (15Mb required on disk) machine is available <a href="ftp://vmware.aircrack-ng.org/TransRT73.zip" class="urlextern" title="ftp://vmware.aircrack-ng.org/TransRT73.zip"  rel="nofollow">here</a>. This machine currently only works with RT73. See <a href="http://tinyshell.be/aircrackng/forum/index.php?topic=2204.0" class="urlextern" title="http://tinyshell.be/aircrackng/forum/index.php?topic=2204.0"  rel="nofollow">this thread</a> on the forum for more information.
+</p>
+
+</div>
+
+<h2><a name="driver_patches" id="driver_patches">Driver patches</a></h2>
+<div class="level2">
+
+<p>
+They can be found <a href="http://patches.aircrack-ng.org" class="urlextern" title="http://patches.aircrack-ng.org"  rel="nofollow">here...</a> and <a href="/doku.php?id=install_drivers&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="install_drivers">this link</a> explains how to install the driver(s) for you adapter(s).
+</p>
+
+</div>
+
+<h1><a name="support" id="support">Support</a></h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> <acronym title="Internet Relay Chat">IRC</acronym>: <a href="irc://irc.freenode.net/aircrack-ng" class="urlextern" title="irc://irc.freenode.net/aircrack-ng"  rel="nofollow">#aircrack-ng</a> on <a href="http://freenode.net/irc_servers.shtml" class="urlextern" title="http://freenode.net/irc_servers.shtml"  rel="nofollow">Freenode</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://forum.tinyshell.be/" class="urlextern" title="http://forum.tinyshell.be/"  rel="nofollow">Forum</a> </div>
+</li>
+</ul>
+
+</div>
+
+<h1><a name="documentation" id="documentation">Documentation</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="aircrack-ng_suite" id="aircrack-ng_suite">Aircrack-ng suite</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="/doku.php?id=aircrack-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="aircrack-ng">aircrack-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airdecap-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airdecap-ng">airdecap-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airmon-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airmon-ng">airmon-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=aireplay-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="aireplay-ng">aireplay-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airodump-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airodump-ng">airodump-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=packetforge-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="packetforge-ng">packetforge-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airtun-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airtun-ng">airtun-ng</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airdriver-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airdriver-ng">airdriver-ng</a> Coming in the next release! Not available now.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airolib-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airolib-ng">airolib-ng</a> Coming in the next release! Not available now.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=airserv-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="airserv-ng">airserv-ng</a> Coming in the next release! Not available now.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=easside-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="easside-ng">easside-ng</a> Coming in the next release! Not available now.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=wesside-ng&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="wesside-ng">wesside-ng</a> Coming in the next release! Not available now.</div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=tools&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="tools">Tools</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="/doku.php?id=spanish&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="spanish">Traducción al español</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="other_documentation" id="other_documentation">Other Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="/doku.php?id=compatibility_drivers&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="compatibility_drivers"> Compatibility, Drivers, Which Card to Purchase</a></div>
+</li>
+<li class="level1"><div class="li"> Installing the <a href="/doku.php?id=install_aircrack&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="install_aircrack">aircrack-ng suite</a> and the <a href="/doku.php?id=install_drivers&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="install_drivers">drivers</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=faq&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="faq">FAQ - Frequently Asked Questions and Troubleshooting</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=tutorial&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="tutorial">Tutorials</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=videos&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="videos">Videos</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=user_docs&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="user_docs">User Documentation by Platform (Linux, Windows)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=links&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="links">Links, References and Other Learning Materials</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=quotes&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="quotes">Famous quotes from #aircrack-ng</a></div>
+</li>
+</ul>
+
+</div>
+
+<h1><a name="donations" id="donations">Donations</a></h1>
+<div class="level1">
+
+<p>
+ We would like to thank everyone who <a href="/doku.php?id=donators&amp;DokuWiki=01960a5f302c47b6389d154149a51921" class="wikilink1" title="donators">contributes</a> to Aircrack-ng.
+</p>
+
+<p>
+Monetary donations may be made via <a href="https://www.paypal.com/xclick/business=tdotreppe@aircrack-ng.org&amp;item_name=Aircrack-ng%20donation&amp;rm=2&amp;no_note=1&amp;no_shipping=1&amp;tax=0&amp;currency_code=EUR" class="urlextern" title="https://www.paypal.com/xclick/business=tdotreppe@aircrack-ng.org&amp;item_name=Aircrack-ng%20donation&amp;rm=2&amp;no_note=1&amp;no_shipping=1&amp;tax=0&amp;currency_code=EUR"  rel="nofollow">Paypal</a> or via IBAN, BIC/SWIFT. There is no minimum amount for your donation. Any and all donations are greatly appreciated.<br/>
+
+</p>
+
+<p>
+For any other donation or if you have any questions, contact me at tdotreppe@aircrack-ng.org
+</p>
+
+</div>
+
+<h1><a name="url" id="url">URL</a></h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> Wiki: <a href="http://www.aircrack-ng.org" class="urlextern" title="http://www.aircrack-ng.org"  rel="nofollow">www.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Patches: <a href="http://patches.aircrack-ng.org" class="urlextern" title="http://patches.aircrack-ng.org"  rel="nofollow">patches.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Videos (tutorials): <a href="http://videos.aircrack-ng.org" class="urlextern" title="http://videos.aircrack-ng.org"  rel="nofollow">videos.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Download: <a href="http://download.aircrack-ng.org" class="urlextern" title="http://download.aircrack-ng.org"  rel="nofollow">download.aircrack-ng.org</a> (Aircrack-ng) - <a href="ftp://vmware.aircrack-ng.org" class="urlextern" title="ftp://vmware.aircrack-ng.org"  rel="nofollow">ftp://vmware.aircrack-ng.org</a> (VMWare virtual machines)</div>
+</li>
+<li class="level1"><div class="li"> Forum: <a href="http://forum.aircrack-ng.org" class="urlextern" title="http://forum.aircrack-ng.org"  rel="nofollow">forum.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Trac: <a href="http://trac.aircrack-ng.org" class="urlextern" title="http://trac.aircrack-ng.org"  rel="nofollow">trac.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Buildbot: <a href="http://buildbot.aircrack-ng.org" class="urlextern" title="http://buildbot.aircrack-ng.org"  rel="nofollow">buildbot.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Blog: <a href="http://blog.aircrack-ng.org" class="urlextern" title="http://blog.aircrack-ng.org"  rel="nofollow">blog.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Photos (events): <a href="http://photos.aircrack-ng.org" class="urlextern" title="http://photos.aircrack-ng.org"  rel="nofollow">photos.aircrack-ng.org</a></div>
+</li>
+<li class="level1"><div class="li"> Videos (events): <a href="http://cccamp2007.aircrack-ng.org" class="urlextern" title="http://cccamp2007.aircrack-ng.org"  rel="nofollow">cccamp2007.aircrack-ng.org</a> (Chaos Communication Camp 2007) - <a href="http://defcon15.aircrack-ng.org" class="urlextern" title="http://defcon15.aircrack-ng.org"  rel="nofollow">defcon15.aircrack-ng.org</a> (Defcon 15 - 2007)</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="rss" id="rss">RSS</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.aircrack-ng.org/feed.php?type=rss" class="urlextern" title="http://www.aircrack-ng.org/feed.php?type=rss"  rel="nofollow">Wiki</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://tinyshell.be/aircrackng/forum/index.php?action=.xml&amp;type=rss" class="urlextern" title="http://tinyshell.be/aircrackng/forum/index.php?action=.xml&amp;type=rss"  rel="nofollow">Forum</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://trac.aircrack-ng.org/timeline?milestone=on&amp;ticket=on&amp;ticket_details=on&amp;changeset=on&amp;wiki=on&amp;max=50&amp;daysback=90&amp;format=rss" class="urlextern" title="http://trac.aircrack-ng.org/timeline?milestone=on&amp;ticket=on&amp;ticket_details=on&amp;changeset=on&amp;wiki=on&amp;max=50&amp;daysback=90&amp;format=rss"  rel="nofollow">Trac</a></div>
+</li>
+</ul>
+
+</div>
+
+<h1><a name="contact" id="contact">Contact</a></h1>
+<div class="level1">
+
+<p>
+ If you have any question regarding this website (this wiki, forum, trac, &hellip;), do not hesitate to contact me at <a href="mailto:&#x74;&#x64;&#x6f;&#x74;&#x72;&#x65;&#x70;&#x70;&#x65;&#x40;&#x61;&#x69;&#x72;&#x63;&#x72;&#x61;&#x63;&#x6b;&#x2d;&#x6e;&#x67;&#x2e;&#x6f;&#x72;&#x67;" class="mail JSnocheck" title="&#x74;&#x64;&#x6f;&#x74;&#x72;&#x65;&#x70;&#x70;&#x65;&#x40;&#x61;&#x69;&#x72;&#x63;&#x72;&#x61;&#x63;&#x6b;&#x2d;&#x6e;&#x67;&#x2e;&#x6f;&#x72;&#x67;">&#x74;&#x64;&#x6f;&#x74;&#x72;&#x65;&#x70;&#x70;&#x65;&#x40;&#x61;&#x69;&#x72;&#x63;&#x72;&#x61;&#x63;&#x6b;&#x2d;&#x6e;&#x67;&#x2e;&#x6f;&#x72;&#x67;</a>. <br/>
+
+</p>
+
+<p>
+<br/>
+
+</p>
+
+<p>
+Thanks to devine for the original work and to everyone who contributed to aircrack (You know who you are) <img src="/lib/images/smileys/icon_wink.gif" class="middle" alt=";-)" />  
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        main.txt &middot; Last modified: 2007/08/25 23:17 by mister_x      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <form class="button" method="post" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="Main" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [ALT+V]" /></div></form>        <form class="button" method="get" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="Main" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [ALT+O]" /></div></form>      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                <form class="button" method="get" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="id" value="Main" /><input type="submit" value="Login" class="button" title="Login" /></div></form>        <form class="button" method="get" action="/doku.php"><input type="hidden" name="DokuWiki" value="01960a5f302c47b6389d154149a51921" /><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="Main" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [ALT+X]" /></div></form>        <a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footerinc">
+  <a  href="/feed.php?DokuWiki=01960a5f302c47b6389d154149a51921" title="Recent changes RSS feed"><img src="/lib/tpl/default/images/button-rss.png" width="80" height="15" alt="Recent changes RSS feed" /></a>
+
+  <a  href="http://creativecommons.org/licenses/by-nc-sa/2.0/" rel="license" title="Creative Commons License"><img src="/lib/tpl/default/images/button-cc.gif" width="80" height="15" alt="Creative Commons License" /></a>
+
+  <a  href="https://www.paypal.com/xclick/business=andi%40splitbrain.org&amp;item_name=DokuWiki+Donation&amp;no_shipping=1&amp;no_note=1&amp;tax=0&amp;currency_code=EUR&amp;lc=US" title="Donate"><img src="/lib/tpl/default/images/button-donate.gif" alt="Donate" width="80" height="15" /></a>
+
+  <a  href="http://www.php.net" title="Powered by PHP"><img src="/lib/tpl/default/images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
+
+  <a  href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="/lib/tpl/default/images/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" /></a>
+
+  <a  href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="/lib/tpl/default/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
+
+  <a  href="http://wiki.splitbrain.org/wiki:dokuwiki" title="Driven by DokuWiki"><img src="/lib/tpl/default/images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
+
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+
+</div>
+
+<div class="no"><img src="/lib/exe/indexer.php?id=Main&amp;1188141379" width="1" height="1" alt=""  /></div>
+</body>
+</html>
